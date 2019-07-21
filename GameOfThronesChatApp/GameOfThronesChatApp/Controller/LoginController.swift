@@ -25,6 +25,10 @@ class LoginController: UIViewController {
         
         //need x, y width, height constraints
         inputContainerView.centerXAnchor.constraint(equalTo: view.centerXAnchor)
+        inputContainerView.translatesAutoresizingMaskIntoConstraints = false
+        inputContainerView.centerYAnchor.constraint(equalTo: view.centerYAnchor)
+        inputContainerView.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0, constant: -24)
+        inputContainerView.heightAnchor.constraint(equalToConstant: 150)
     }
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent

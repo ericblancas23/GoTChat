@@ -10,7 +10,22 @@ import UIKit
 
 class LoginController: UIViewController {
     
+    let inputContainerView: UIView = {
+        let view = UIView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.backgroundColor = UIColor.white
+        view.layer.cornerRadius = 5
+        view.layer.masksToBounds = true
+        return view
+    }()
     
+    let loginRegisterButton: UIButton = {
+        let button = UIButton(type: .system)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.backgroundColor = UIColor(r: 80, g: 101, b: 161)
+        button.setTitle("Register", for: .normal)
+        return button
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,18 +33,35 @@ class LoginController: UIViewController {
         // Do any additional setup after loading the view.
         view.backgroundColor = UIColor(r: 61, g: 91, b: 151)
         
-        let inputContainerView = UIView()
-        inputContainerView.backgroundColor = UIColor.white
         
         view.addSubview(inputContainerView)
+        view.addSubview(loginRegisterButton)
         
-        //need x, y width, height constraints
-        inputContainerView.centerXAnchor.constraint(equalTo: view.centerXAnchor)
-        inputContainerView.translatesAutoresizingMaskIntoConstraints = false
-        inputContainerView.centerYAnchor.constraint(equalTo: view.centerYAnchor)
-        inputContainerView.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0, constant: -24)
-        inputContainerView.heightAnchor.constraint(equalToConstant: 150)
+//        //need x, y width, height constraints
+//        inputContainerView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+//        inputContainerView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+//        inputContainerView.widthAnchor.constraint(equalTo: view.widthAnchor, constant: -24).isActive = true
+//        inputContainerView.heightAnchor.constraint(equalToConstant: 150).isActive = true
+        setupInputContainerView()
+        setupLoginRegisterButton()
     }
+    
+    func setupInputContainerView() {
+        //need x, y width, height constraints
+        inputContainerView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        inputContainerView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        inputContainerView.widthAnchor.constraint(equalTo: view.widthAnchor, constant: -24).isActive = true
+        inputContainerView.heightAnchor.constraint(equalToConstant: 150).isActive = true
+    }
+    
+    func setupLoginRegisterButton() {
+        loginRegisterButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        loginRegisterButton.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        loginRegisterButton.widthAnchor.constraint(equalTo: view.widthAnchor, constant: -15).isActive = true
+        loginRegisterButton.heightAnchor.constraint(equalToConstant: 150).isActive = true
+
+    }
+    
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }

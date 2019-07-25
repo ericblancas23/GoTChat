@@ -92,15 +92,15 @@ class LoginController: UIViewController {
     
     func setupProfileImageView() {
         profileImage.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        profileImage.centerYAnchor.constraint(equalTo: inputContainerView.topAnchor, constant: -12).isActive = true
-        profileImage.widthAnchor.constraint(equalToConstant: 150).isActive = true
-        profileImage.heightAnchor.constraint(equalToConstant: 150).isActive = true
+        profileImage.centerYAnchor.constraint(equalTo: inputContainerView.topAnchor, constant: -60).isActive = true
+        profileImage.widthAnchor.constraint(equalToConstant: 100).isActive = true
+        profileImage.heightAnchor.constraint(equalToConstant: 100).isActive = true
     }
     
     func setupInputContainerView() {
         //need x, y width, height constraints
         inputContainerView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        inputContainerView.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: -110).isActive = true
+        inputContainerView.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: -105).isActive = true
         inputContainerView.widthAnchor.constraint(equalTo: view.widthAnchor, constant: -24).isActive = true
         inputContainerView.heightAnchor.constraint(equalToConstant: 150).isActive = true
         

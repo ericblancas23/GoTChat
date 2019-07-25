@@ -68,7 +68,8 @@ class LoginController: UIViewController {
     
     let profileImage: UIImageView = {
         let imageView = UIImageView()
-        imageView.image = UIImage(named: "??")
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        imageView.image = UIImage(named: "piedpiper")
         return imageView
     }()
     
@@ -81,10 +82,19 @@ class LoginController: UIViewController {
         
         view.addSubview(inputContainerView)
         view.addSubview(loginRegisterButton)
+        view.addSubview(profileImage)
         
         //need x, y width, height constraints
         setupInputContainerView()
         setupLoginRegisterButton()
+        setupProfileImageView()
+    }
+    
+    func setupProfileImageView() {
+        profileImage.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        profileImage.centerYAnchor.constraint(equalTo: inputContainerView.topAnchor, constant: -12).isActive = true
+        profileImage.widthAnchor.constraint(equalToConstant: 150).isActive = true
+        profileImage.heightAnchor.constraint(equalToConstant: 150).isActive = true
     }
     
     func setupInputContainerView() {

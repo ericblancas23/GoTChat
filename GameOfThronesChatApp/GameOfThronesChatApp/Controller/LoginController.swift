@@ -66,6 +66,12 @@ class LoginController: UIViewController {
         return tf
     }()
     
+    let profileImage: UIImageView = {
+        let imageView = UIImageView()
+        imageView.image = UIImage(named: "??")
+        return imageView
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

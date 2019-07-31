@@ -12,6 +12,7 @@
 		239F754722E0069400963929 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 239F754622E0069400963929 /* Assets.xcassets */; };
 		239F754A22E0069400963929 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 239F754822E0069400963929 /* LaunchScreen.storyboard */; };
 		239F755322E0117500963929 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239F755222E0117500963929 /* LoginController.swift */; };
+		23BBE10C22F22CB200B3151B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 23BBE10B22F22CB200B3151B /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		239F754922E0069400963929 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		239F754B22E0069400963929 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		239F755222E0117500963929 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		23BBE10B22F22CB200B3151B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 				239F753F22E0069200963929 /* AppDelegate.swift */,
 				239F754622E0069400963929 /* Assets.xcassets */,
 				239F754822E0069400963929 /* LaunchScreen.storyboard */,
+				23BBE10B22F22CB200B3151B /* GoogleService-Info.plist */,
 				239F754B22E0069400963929 /* Info.plist */,
 			);
 			path = GameOfThronesChatApp;
@@ -132,6 +135,7 @@
 			files = (
 				239F754A22E0069400963929 /* LaunchScreen.storyboard in Resources */,
 				239F754722E0069400963929 /* Assets.xcassets in Resources */,
+				23BBE10C22F22CB200B3151B /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

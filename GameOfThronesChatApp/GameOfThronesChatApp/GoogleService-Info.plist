@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>479715436557-5jf8fn1vvdt1s9l6uscqva13jr0e447s.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.479715436557-5jf8fn1vvdt1s9l6uscqva13jr0e447s</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDWVeSniznnNiSbqeocL3HiyleaXCl3d7s</string>
+	<key>GCM_SENDER_ID</key>
+	<string>479715436557</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.ericblancas.GameOfThronesChatApp</string>
+	<key>PROJECT_ID</key>
+	<string>piperchat-c1c1a</string>
+	<key>STORAGE_BUCKET</key>
+	<string>piperchat-c1c1a.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:479715436557:ios:a5ca14d23624cf6b</string>
+	<key>DATABASE_URL</key>
+	<string>https://piperchat-c1c1a.firebaseio.com</string>
+</dict>
+</plist>

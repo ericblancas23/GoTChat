@@ -6,7 +6,7 @@ target 'GameOfThronesChatApp' do
   use_frameworks!
 
   # Pods for GameOfThronesChatApp
-  pod 'firebase/Database'
-  pod 'firebase/Auth'
-  pod 'firebase/Storage'
+  pod 'Firebase/Database'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Storage'
 end

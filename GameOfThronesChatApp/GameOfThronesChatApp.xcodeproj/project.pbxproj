@@ -13,9 +13,11 @@
 		239F754A22E0069400963929 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 239F754822E0069400963929 /* LaunchScreen.storyboard */; };
 		239F755322E0117500963929 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239F755222E0117500963929 /* LoginController.swift */; };
 		23BBE10C22F22CB200B3151B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 23BBE10B22F22CB200B3151B /* GoogleService-Info.plist */; };
+		C6C077C446F12A359D244B3D /* Pods_GameOfThronesChatApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAFCCD187C71C611A6F742DC /* Pods_GameOfThronesChatApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0586FCC7AF151B551B916443 /* Pods-GameOfThronesChatApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GameOfThronesChatApp.release.xcconfig"; path = "Target Support Files/Pods-GameOfThronesChatApp/Pods-GameOfThronesChatApp.release.xcconfig"; sourceTree = "<group>"; };
 		239F753C22E0069200963929 /* GameOfThronesChatApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GameOfThronesChatApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		239F753F22E0069200963929 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		239F754122E0069200963929 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		239F754B22E0069400963929 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		239F755222E0117500963929 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		23BBE10B22F22CB200B3151B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DAFCCD187C71C611A6F742DC /* Pods_GameOfThronesChatApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GameOfThronesChatApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E36F49C14578E36C1EE3B168 /* Pods-GameOfThronesChatApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GameOfThronesChatApp.debug.xcconfig"; path = "Target Support Files/Pods-GameOfThronesChatApp/Pods-GameOfThronesChatApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6C077C446F12A359D244B3D /* Pods_GameOfThronesChatApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				239F753E22E0069200963929 /* GameOfThronesChatApp */,
 				239F753D22E0069200963929 /* Products */,
+				2CCB72BC531FF84ADE280FCC /* Pods */,
+				5EB0AD627084D7ED7B9194DD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -75,6 +82,24 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		2CCB72BC531FF84ADE280FCC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E36F49C14578E36C1EE3B168 /* Pods-GameOfThronesChatApp.debug.xcconfig */,
+				0586FCC7AF151B551B916443 /* Pods-GameOfThronesChatApp.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		5EB0AD627084D7ED7B9194DD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DAFCCD187C71C611A6F742DC /* Pods_GameOfThronesChatApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -82,9 +107,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 239F754E22E0069400963929 /* Build configuration list for PBXNativeTarget "GameOfThronesChatApp" */;
 			buildPhases = (
+				77073D07269B4D6372F78B27 /* [CP] Check Pods Manifest.lock */,
 				239F753822E0069200963929 /* Sources */,
 				239F753922E0069200963929 /* Frameworks */,
 				239F753A22E0069200963929 /* Resources */,
+				F3488463CDF7FFF15D53F947 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -140,6 +167,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		77073D07269B4D6372F78B27 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GameOfThronesChatApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F3488463CDF7FFF15D53F947 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GameOfThronesChatApp/Pods-GameOfThronesChatApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GameOfThronesChatApp/Pods-GameOfThronesChatApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GameOfThronesChatApp/Pods-GameOfThronesChatApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		239F753822E0069200963929 /* Sources */ = {
@@ -284,6 +353,7 @@
 		};
 		239F754F22E0069400963929 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E36F49C14578E36C1EE3B168 /* Pods-GameOfThronesChatApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -301,6 +371,7 @@
 		};
 		239F755022E0069400963929 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0586FCC7AF151B551B916443 /* Pods-GameOfThronesChatApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

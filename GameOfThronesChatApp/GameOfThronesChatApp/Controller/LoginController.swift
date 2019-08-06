@@ -35,7 +35,20 @@ class LoginController: UIViewController {
     }()
     
     @objc func handleRegister() {
-        Firebase.Auth().createUser(withEmail: emailTextField.text, password: passwordTextField.text, completion:  AuthResultCallback?)
+        guard let email = emailTextField.text, let password = passwordTextField
+            .text else {
+                print("Form is not valid")
+                return
+        }
+        
+        
+        Firebase.Auth().createUser(withEmail: email, password: password, completion: { (User?, error ) in
+            if error != nil {
+                print(error)
+                return
+            }
+
+        })
         print(123)
     }
     

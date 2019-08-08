@@ -42,7 +42,7 @@ class LoginController: UIViewController {
         }
         
         
-        Firebase.Auth().createUser(withEmail: email, password: password, completion: { (User?, error ) in
+        Firebase.Auth()?.createUser(withEmail: email, password: password, completion: { (User,error ) in
             if error != nil {
                 print(error)
                 return
